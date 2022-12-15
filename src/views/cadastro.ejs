@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><%= title %></title>
+    </head>
+    <body>
+        <h1 class="text-center title-1"><%= title %></h1>
+        <form action="/rota1" method="POST">
+            <p>Name:<input type="text" name="pessoa[name]" value="<%= pessoa.name %>"/></p>
+            <p>Idade:<input type="text" name="pessoa[idade]" value="<%= pessoa.idade %>"/></p>
+            <p>Endereco:<input type="text" name="pessoa[endereco]" value="<%= pessoa.endereco %>"/></p>
+            <p>Telefone:<input type="text" name="pessoa[telefone]" value="<%= pessoa.telefone %>"/></p>
+            <p>CPF:<input type="text" name="pessoa[cpf]" value="<%= pessoa.cpf %>"/></p>
+            <p><input type="submit" value="Salvar" /></p>
+        </form>
+    </body>
+</html>

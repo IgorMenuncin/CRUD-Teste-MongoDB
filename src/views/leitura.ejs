@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/assets/style.css" type="text/css">
+        <title>Leitura</title>
+    </head>
+    <body>
+    <% pessoa.forEach( (pessoa, index) => {%>
+        <div class="pessoa">
+            <p>Pessoa: <%=index%></p>
+            <p>Nome: <%=pessoa.name%></p>
+            <p>Idade: <%=pessoa.idade%></p>
+            <p>Endereco: <%=pessoa.endereco%></p>
+            <p>Telefone: <%=pessoa.telefone%></p>
+            <p>CPF: <%=pessoa.cpf%></p>
+        </div>
+    <% }) %>
+    </body>
+</html>
